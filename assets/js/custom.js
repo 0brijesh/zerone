@@ -152,3 +152,22 @@ $(document).ready(function() {
   });
 });
 // scroll top content (on click header menu option) end
+// updates 11-04-2022
+// loading start
+const loading = document.querySelector('#loading');
+
+for(let i=0; i<12;i++){
+    let addDiv = document.createElement('div');
+    addDiv.style.transform = `rotate(${30*i}deg)`;
+    addDiv.style.animationDelay = 100 + 100*i + 'ms';
+    loading.appendChild(addDiv);
+}
+// loading end
+// -----Country Code Selection start
+$("#mobile_code").intlTelInput({
+	initialCountry: "in",
+	separateDialCode: true,
+	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+});
+// -----Country Code Selection end
+// updates 11-04-2022

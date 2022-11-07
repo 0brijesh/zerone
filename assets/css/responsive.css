@@ -265,6 +265,15 @@
     .form-floating>.form-control, .form-floating>.form-control-plaintext,.form-floating>label{
         padding: 10px 16px;
     }
+    /* updates 11-04-2022 */
+    .success-msg-wrap h4 {
+        font-size: 22px;
+        line-height: inherit;
+    }
+    .iti{
+        min-height: 46px;
+    }
+    /* updates 11-04-2022 */
 }
 @media (max-width: 767px){
     .case-study-img img {
@@ -479,6 +488,17 @@
         top: 10px;
         background-color: var(--black-color);
     }
+    /* updates 11-04-2022 */
+      .success-msg-wrap {
+        min-height: 200px;
+    }
+    .success-msg-wrap img {
+        max-width: 60px;
+    }
+    .success-msg-wrap h4 {
+        font-size: 18px;
+    }
+    /* updates 11-04-2022 */
 }
 @media (max-width: 575px){
     section{

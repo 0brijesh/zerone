@@ -10,6 +10,9 @@
     <!-- all css start -->
     <link href="./assets/css/owl.carousel.min.css" type="text/css" rel="stylesheet" />
     <link href="./assets/css/owl.theme.default.css" type="text/css" rel="stylesheet" />
+     <!-- updates 11-04-2022 -->
+     <link href="./assets/css/intlTelInput.css" type="text/css" rel="stylesheet" />
+     <!-- updates 11-04-2022 -->
     <link href="./assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <link href="./assets/css/style.css" type="text/css" rel="stylesheet" />
     <link href="./assets/css/responsive.css" type="text/css" rel="stylesheet" />
@@ -225,7 +228,9 @@
      <div class="modal fade contact-us-form-modal" id="contactUsModal" tabindex="-1" aria-labelledby="contactUsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
+             <!-- updates 11-04-2022 -->
             <div class="modal-body">
+            <!-- updates 11-04-2022 -->
                 <div class="close-button d-flex align-items-center justify-content-center cursor-pointer" data-bs-dismiss="modal" aria-label="Close">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
                 </div>
@@ -245,10 +250,17 @@
                                     <input type="email" name="" value="" class="form-control custom-input" placeholder="Email*" id="floatingTextarea2"/>
                                     <label for="floatingTextarea2">Email<sup class="star">*</sup></label>
                                 </div>
-                                <div class="form-group form-floating">
-                                    <input type="number" name="" value="" class="form-control custom-input" placeholder="Phone Number*" id="floatingTextarea3"/>
-                                    <label for="floatingTextarea3">Phone Number<sup class="star">*</sup></label>
+                                 <!-- updates 11-04-2022 -->
+                                <div  class="d-flex align-items-center">
+                                    <div class="form-group">
+                                        <input type="text" id="mobile_code" class="form-control custom-input" placeholder="" name="name">
+                                    </div>
+                                    <div class="form-group form-floating phone-number-field w-100">
+                                        <input type="number" name="" value="" class="form-control custom-input" placeholder="Phone Number*" id="floatingTextarea3"/>
+                                        <label for="floatingTextarea3">Phone Number<sup class="star">*</sup></label>
+                                    </div>
                                 </div>
+                                 <!-- updates 11-04-2022 -->
                                 <div class="form-group form-floating">
                                     <input type="text" name="" value="" class="form-control custom-input" placeholder="City*" id="floatingTextarea4"/>
                                     <label for="floatingTextarea4">City<sup class="star">*</sup></label>
@@ -261,9 +273,19 @@
                                     <button class="primary-btn w-100">Submit</button>
                                 </div>
                             </form>
+                            <!-- updates 11-04-2022 -->
+                            <div class="success-msg-wrap text-center mx-auto d-flex flex-column justify-content-center align-items-center d-none">
+                                <img src="./assets/images/icon/greate-job.svg" class="img-fluid" alt="" />
+                                <h4>Great Job!</h4>
+                                <h4>We Will Be In Touch Soon</h4>
+                            </div>
+                            <!-- updates 11-04-2022 -->
                         </div>
                     </div>
                 </div>
+                <!-- updates 11-04-2022 -->
+                <div id="loading" class="loading"></div>
+                <!-- updates 11-04-2022 -->
             </div>
         </div>
         </div>
@@ -274,6 +296,9 @@
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
+    <!-- updates 11-04-2022 -->
+    <script src="./assets/js/intlTelInput-jquery.min.js"></script>
+    <!-- updates 11-04-2022 -->
     <script src="./assets/js/custom.js"></script>
     <!-- all scripts end -->
 </body>
