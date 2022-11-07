@@ -874,7 +874,7 @@
                     </div>
                     <div class="col-md-6 col-lg-7">
                         <div class="contact-us-form-wrap d-flex align-items-center w-100">
-                            <form class="w-100">
+                            <form class="w-100" method="POST" id="id_contactus">
                                 <div class="form-group form-floating">
                                     <input type="text" name="" value="" class="form-control custom-input" placeholder="Name*" id="floatingTextarea1"/>
                                     <label for="floatingTextarea1">Name<sup class="star">*</sup></label>
@@ -908,9 +908,7 @@
                             </form>
                             <!-- updates 11-04-2022 -->
                             <div class="success-msg-wrap text-center mx-auto d-flex flex-column justify-content-center align-items-center d-none">
-                                <img src="./assets/images/icon/greate-job.svg" class="img-fluid" alt="" />
-                                <h4>Great Job!</h4>
-                                <h4>We Will Be In Touch Soon</h4>
+                                
                             </div>
                             <!-- updates 11-04-2022 -->
                         </div>
@@ -934,6 +932,40 @@
     <!-- updates 11-04-2022 -->
     <script src="./assets/js/custom.js"></script>
     <!-- all scripts end -->
+	
+	<script>
+        $(document).ready(function($) {
+            $("#id_contactus").submit(function(event) 
+                {
+                    $.ajax({
+                    type: "POST",
+                    url: "http://localhost/zerone/",
+                    data:{
+                            name:$('#id_name').val(),
+                            emailid:$('#id_emailid').val(),
+                            mobile:$('#id_mobile').val(),
+                            city:$('#id_city').val(),
+                            requirement:$('#id_requirement').val(),
+                            csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+                        },
+					beforeSend: function() {
+						$("#contactUsModal .modal-body").addClass("modal-body-loading-screen");
+					},
+                    success: function (responseText) {
+					    setTimeout(function () {
+							$("#id_contactus").addClass("d-none");
+							$(".success-msg-wrap").removeClass("d-none");
+							$("#contactUsModal .modal-body").removeClass("modal-body-loading-screen");
+							$("#id_formsubmitmessage").removeClass("modal-body-loading-screen");
+							$('.success-msg-wrap').html('<img src="./assets/images/icon/greate-job.svg" class="img-fluid" alt="" /><h4>Great Job!</h4><h4>We Will Be In Touch Soon</h4>');
+						}, 3000);
+						<!-- $('#id_formsubmitmessage').html('<div><h4>Great! We Will Be In Touch Soon.</h4></div>'+'<div>'+'<img class="img-fluid"'+ 'src='+'{% static "zerone/assets/images/banner/form_submit_success.png"%}>'+"</div>") -->
+                    }
+                    });
+                    return false; //<---- move it here
+                });
+        });
+    </script>
 </body>
 
 </html>
