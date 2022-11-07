@@ -1,0 +1,556 @@
+/* responsive css start */
+@media (min-width: 1140px){
+    .container{
+        max-width: 1040px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1150px;
+    }
+}
+@media (min-width: 1350px){
+    .container{
+        max-width: 1250px;
+    }
+}
+@media (min-width: 1440px){
+    .container{
+        max-width: 1350px;
+    }
+}
+@media (min-width: 1600px){
+    .container{
+        max-width: 1450px;
+    }
+}
+@media (min-width: 1900px){
+}
+@media (max-width: 1799px){
+    .hero-section{
+        padding: 70px 12px;
+    }
+}
+@media (max-width: 1599px){
+    .hero-section h1{
+        font-size: 50px;
+    }
+    .hero-content-wrap {
+        max-width: 540px;
+    }
+    .hero-section p{
+        font-size: 18px;
+    }
+    .hero-section .hero-chart-col p{
+        font-size: 12px;
+    }
+    .hero-chart-wrap {
+        grid-gap: 23px 10px;
+    }
+    .hero-img {
+        width: 500px;
+    }
+    .case-studies-item-img{
+        height: 270px;
+        max-height: 270px;
+    }
+    .owl-carousel-client-review .owl-item {
+        padding: 20px;
+    }
+    .we-are-hiring-img-col {
+        padding-left: 300px;
+    }
+}
+@media (max-width: 1439px){
+    .engagement-mddel-col img{
+        max-width: 100px;
+    }
+    .we-are-hiring-img-col {
+        padding-left: 230px;
+    }
+}
+@media (max-width: 1365px){
+    .technologies-work-on-note h4{
+        font-size: 16px;
+    }
+    .owl-carousel-client-review .owl-item {
+        padding: 10px;
+    }
+    .technologies-work-on-ico {
+        width: 55px;
+        height: 55px;
+    }
+    .technologies-work-on-note{
+        width: calc(100% - 50px);
+    }
+}
+@media (max-width: 1279px){
+}
+@media (max-width: 1199px){
+    .case-study-img img {
+        min-width: 400px;
+        width: 400px;
+    }
+    .footer-row {
+        grid-gap: 50px 60px;
+    }
+    .hero-img {
+        width: 400px;
+    }
+    .hero-section h1 {
+        font-size: 35px;
+    }
+    .hero-section p{
+        margin-bottom: 30px;
+    }
+    .hero-content-wrap {
+        max-width: 500px;
+    }
+    .business-idea-img {
+        width: 300px;
+    }
+    .business-idea-content-wrap {
+        width: calc(100% - 300px);
+        grid-gap: 24px;
+    }
+    .business-idea-content-col{
+        padding: 20px;
+    }
+    .our-services-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .technologies-work-on-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .domains-served-grid {
+        grid-gap: 40px 30px;
+    }
+    .domains-served-col p {
+        font-size: 15px;
+        line-height: inherit;
+    }
+    .engagement-mddel-gap {
+        grid-gap: 20px;
+    }
+    .engagement-mddel-col{
+        padding: 30px 30px 30px 16px;
+    }
+    .engagement-model-content h5,.engagement-model-content p,.engagement-model-content h6{
+        margin-bottom: 10px;
+    }
+    .ideas-grid {
+        grid-gap: 35px;
+    }
+    .client-review-left-col {
+        width: 300px;
+    }
+    .client-review-right-col {
+        width: calc(100% - 300px);
+    }
+    .client-review-left-col {
+        width: 250px;
+    }
+    .client-review-right-col {
+        width: calc(100% - 250px);
+    }
+    .we-are-hiring-img-col {
+        padding-left: 70px;
+    }
+    .contact-us-form-modal .modal-dialog {
+        max-width: 900px;
+    }
+    .contact-us-form-wrap {
+        padding: 30px;
+    }
+    .contact-us-form-modal .modal-bg-col{
+        padding: 30px 20px;
+    }
+    .contact-us-form-modal .modal-bg-col h2{
+        font-size: 22px;
+        top: 70px;
+        left: 70px;
+    }
+    :root{
+        --case-study-row-width: 800px;
+    }
+    .case-study-img img {
+        min-width: 300px;
+        width: 300px;
+    }
+    .case-study-note h2{
+        font-size: 28px;
+    }
+    .case-study-note {
+        max-width: 400px;
+    }
+}
+@media (max-width: 991px){
+    .case-study-note h2 {
+        font-size: 28px;
+    }
+    .case-study-details-wrap h4, footer h2{
+        font-size: 20px;
+    }
+    .case-study-details-wrap p, .case-study-details-wrap li{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .footer-row {
+        grid-gap: 50px;
+    }
+    footer li a, footer span,footer p{
+        text-align: start;
+    }
+    .hero-content-wrap {
+        max-width: 100%;
+    }
+    .hero-section button{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .hero-chart-wrap {
+        grid-gap: 23px 50px;
+    }
+    .business-idea-content-wrap,.business-idea-img {
+        width: 100%;
+    }
+    .our-services-content-wrap,.domains-served-content-wrap{
+        width: 100%;
+        padding-right: 0;
+    }
+    .technologies-work-on-wrap{
+        width: 100%;
+        padding-left: 0;
+    }
+    .heading-title{
+        font-size: 26px;
+        line-height: inherit;
+    }
+    .ideas-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .owl-carousel-client-review {
+        margin-top: 20px;
+    }
+    .engagement-mddel-gap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header ul li a{
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    .header-logo {
+        max-width: 130px;
+    }
+    .primary-btn {
+        min-width: 80px;
+        min-height: 30px;
+        font-size: 12px;
+    }
+    .hero-section {
+        padding: 50px 12px;
+    }
+    .contact-us-form-modal .modal-dialog {
+        max-width: 95%;
+    }
+    .contact-us-form-wrap {
+        padding: 20px;
+    }
+    .form-floating>.form-control, .form-floating>.form-control-plaintext{
+        height: 46px;
+    }
+    .custom-input, .custom-textarea,.contact-us-form-modal button{
+        min-height: 46px;
+    }
+    .form-floating>.form-control, .form-floating>.form-control-plaintext,.form-floating>label{
+        padding: 10px 16px;
+    }
+}
+@media (max-width: 767px){
+    .case-study-img img {
+        min-width: 100%;
+        width: 100%;
+    }
+    .case-study-note {
+        max-width: 100%;
+        margin-top: 18px;
+    }
+    .case-study-note h2{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .case-study-img,.case-study-img img{
+        border-radius: 18px;
+    }
+    .inner-hero-section{
+        padding: 16px 12px;
+    }
+    .header-col{
+        justify-content: space-between;
+    }
+    header{
+        padding: 8px 0;
+    }
+    .header-logo{
+        max-width: 150px;
+    }
+    header.fixed{
+        padding: 15px 0;
+    }
+    .footer-row,.business-idea-content-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-row {
+        grid-gap: 30px;
+    }
+    footer h2 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .hero-section h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    .hero-section p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .hero-section button {
+        min-height: 43px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+    .hero-chart-wrap {
+        grid-gap: 23px 10px;
+    }
+    .hero-chart-col h5 b {
+        font-size: 18px;
+    }
+    .hero-chart-col h5 span{
+        font-size: 9px;
+    }
+    .hero-chart-col h5{
+        line-height: 11px;
+    }
+    .hero-section {
+        padding: 40px 12px;
+    }
+    :root{
+        --section-spacing: 30px;
+    }
+    .heading-title {
+        font-size: 19px;
+    }
+    .owl-carousel-case-studies {
+        margin-top: 0;
+    }
+    .case-studies-item-img {
+        height: 220px;
+        max-height: 220px;
+    }
+    .case-studies-inner-img {
+        max-width: 200px;
+    }
+    .heading-note-p{
+        font-family: var(--mulish-font);
+        font-size: 12px;
+    }
+    .business-idea-content-wrap {
+        padding-left: 0;
+    }
+    .inner-section-mt {
+        margin-top: 21px;
+    }
+    .bi-content {
+        padding-left: 10px;
+    }
+    .bi-content h6{
+        font-size: 14px;
+    }
+    .business-idea-content-col p{
+        margin-top: 10px;
+    }
+    .bi-img{
+        background-color: var(--red-color);
+    }
+    .our-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    .technologies-work-on-grid{
+        grid-gap: 20px 10px;
+    }
+    .technologies-work-on-ico {
+        width: 50px;
+        height: 50px;
+    }
+    .technologies-work-on-note {
+        width: calc(100% - 50px);
+        padding: 5px 10px;
+    }
+    .technologies-work-on-ico img{
+        max-width: 30px;
+    }
+    .technologies-work-on-note h4 {
+        font-size: 13px;
+        letter-spacing: unset;
+    }
+    .domains-served-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px 20px;
+    }
+    .domains-served-col p,.our-services-note p{
+        font-size: 13px;
+    }
+    .domains-served-ico-box {
+        width: 100px;
+        height: 100px;
+    }
+    .engagement-mddel-col {
+        padding: 0 0 30px 0;
+    }
+    .engagement-mddel-imglogo-wrap{
+        background-color: rgba(255, 114, 94, 0.6);
+        border-radius: 20px 20px 0 0; 
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .engagement-model-content {
+        padding: 0 20px;
+    }
+    .ideas-content-wrap {
+        padding-left: 0;
+    }
+    .ideas-col{
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .client-review-left-col,.client-review-right-col {
+        width: 100%;
+    }
+    .client-review-img {
+        width: 200px;
+    }
+    .client-review-item{
+        border-radius: 15px;
+    }
+    .ideas-content-wrap p,.client-review-item p{
+        font-size: 14px;
+    }
+    .review-name svg{
+        width: 30px;
+        height: 30px;
+    }
+    .client-review-item h6,.client-review-item span{
+        font-size: 12px;
+    }
+    .we-are-hiring-content-wrap p {
+        font-size: 14px;
+        line-height: inherit;
+        margin: 20px 0 25px;
+    }
+    .we-are-hiring-content-wrap button {
+        font-size: 16px;
+        min-width: 190px;
+        min-height: 45px;
+        line-height: initial;
+    }
+    .we-are-hiring-img-col {
+        padding-left: 0;
+    }
+    .company-logo-section .big-body-img {
+        max-width: 50px;
+    }
+    .we-are-hiring-img {
+        width: 150px;
+    }
+    .ideas-col img {
+        max-width: 70px;
+    }
+    .contact-us-form-modal .modal-bg-col,.modal-content{
+        border-radius: 0;
+    }
+    .contact-us-form-wrap {
+        padding: 20px 0;
+    }
+    .close-button{
+        right: 10px;
+        top: 10px;
+        background-color: var(--black-color);
+    }
+}
+@media (max-width: 575px){
+    section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .case-study-details-wrap {
+        margin-top: 20px;
+    }
+    .case-study-details-wrap h4{
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .case-study-img-wrap{
+        margin-bottom: 20px;
+    }
+    .case-study-details-wrap p, .case-study-details-wrap li{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .case-study-pb{
+        padding-bottom: 20px;
+    }
+    .contact-us-form-modal .modal-bg-col h2{
+        font-size: 20px;
+        top: 60px;
+        left: 60px;
+    }
+}
+@media (max-width: 399px){
+    .header-logo{
+        max-width: 130px;
+    }
+    .hero-chart-wrap{
+        flex-wrap: wrap;
+        grid-gap: 20px 0;
+    }
+    .hero-chart-col {
+        width: calc(100% / 2);
+        padding: 0 10px;
+    }
+    .our-services-col{
+        border-radius: 20px;
+    }
+    .domains-served-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .client-review-item{
+        padding: 20px;
+    }
+}
+@media (max-width: 349px){
+    .header-logo{
+        max-width: 100px;
+    }
+    .hero-chart-col {
+        width: calc(100% / 1);
+        padding: 0 50px;
+    }
+    .technologies-work-on-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-services-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-services-col{
+        min-height: 130px;
+    }
+    .contact-us-form-modal .modal-bg-col h2{
+        font-size: 17px;
+        top: 50px;
+        left: 50px;
+    }
+}
+/* responsive css end */
